@@ -1,31 +1,4 @@
-:root {
-  --font: 2rem;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 2rem;
-  align-items: flex-start;
-  height: 100vh;
-  box-sizing: border-box;
-  padding: 5rem;
-  background-color: #090f16;
-  background-blend-mode: color;
-  margin: 0;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
-button {
+#nav a {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -33,24 +6,26 @@ button {
   border: none;
   font-family: 'Exo 2';
   font-size: var(--font);
-  border-radius: calc(var(--font) * 0.6);
+  border-radius: calc(var(--font) * 0.5);
   padding: calc(var(--font) * 0.5);
   margin: 0;
   line-height: 1;
   position: relative;
-  
+
+  text-decoration: none;
+
   background-color: transparent;
-  color: white;
+  color: var(--button-color);
   box-shadow: inset 0 0 0 0 rgb(248, 249, 255, 0.5), inset 0 0 0 0 rgb(248, 249, 255, 0.3), 0 0 0 rgb(248, 249, 255, 0.2);
   transition: all ease 0.2s;
 }
 
-button:hover {
+#nav a:hover {
   box-shadow: inset 0 0 0 calc(var(--font) * 0.2) rgb(248, 249, 255, 0.5), inset 0 0 calc(var(--font) * 0.2) calc(var(--font) * 0.5) rgb(248, 249, 255, 0.3), 0 0 calc(var(--font) * 0.2) rgb(248, 249, 255, 0.2);
 }
 
 
-button::before {
+#nav a::before {
   content: '';
   height: 110%;
   width: 105%;
@@ -60,14 +35,27 @@ button::before {
 }
 
 @keyframes borders {
-  0%, 100% {border-width: calc(var(--font) * 0.2) calc(var(--font) * 0.1) calc(var(--font) * 0.02) calc(var(--font) * 0.02);}
-  25% { border-width: calc(var(--font) * 0.1) calc(var(--font) * 0.02) calc(var(--font) * 0.02) calc(var(--font) * 0.2);}
-  50% { border-width: calc(var(--font) * 0.02) calc(var(--font) * 0.02) calc(var(--font) * 0.2) calc(var(--font) * 0.1);}
-  75% { border-width: calc(var(--font) * 0.02) calc(var(--font) * 0.2) calc(var(--font) * 0.1) calc(var(--font) * 0.02);}
+
+  0%,
+  100% {
+    border-width: calc(var(--font) * 0.2) calc(var(--font) * 0.1) calc(var(--font) * 0.02) calc(var(--font) * 0.02);
+  }
+
+  25% {
+    border-width: calc(var(--font) * 0.1) calc(var(--font) * 0.02) calc(var(--font) * 0.02) calc(var(--font) * 0.2);
+  }
+
+  50% {
+    border-width: calc(var(--font) * 0.02) calc(var(--font) * 0.02) calc(var(--font) * 0.2) calc(var(--font) * 0.1);
+  }
+
+  75% {
+    border-width: calc(var(--font) * 0.02) calc(var(--font) * 0.2) calc(var(--font) * 0.1) calc(var(--font) * 0.02);
+  }
 }
 
 
-button:hover::before {
+#nav a:hover::before {
   border: solid rgb(210, 255, 227, 0.8);
   padding: calc(var(--font) * 0.08);
   box-shadow: inset 0 0 calc(var(--font) * 0.2) calc(var(--font) * 0.2) rgb(186, 201, 255, 0.3);
@@ -76,7 +64,7 @@ button:hover::before {
   opacity: 0.5;
 }
 
-span {
+#nav span {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -86,7 +74,7 @@ span {
   z-index: -1;
 }
 
-span::after {
+#nav span::after {
   content: '';
   height: 100%;
   width: 100%;
@@ -94,16 +82,16 @@ span::after {
   background: linear-gradient(90deg, rgb(248, 249, 255, 0), rgb(206, 216, 255, 0.6), rgb(248, 249, 255, 0));
   opacity: 0;
   transform: translateX(-100%);
-  
+
 }
 
-button:hover > span::after {
+#nav a:hover>span::after {
   opacity: 1;
   transform: translateX(100%);
   transition: all ease 1s;
 }
 
-.tab {
-  background-color: white;
-  color: black;
+#nav .tab {
+  background-color: var(--button-color);
+  color: var(--background-color);
 }

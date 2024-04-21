@@ -4,10 +4,10 @@
 ## Style guide
 [Realtime Colors](https://www.realtimecolors.com/?colors=e7eff9-090f16-6f0fc2-181e53-fc8236&fonts=Exo%202-Ubuntu)
 ### Color palette:
---text: #e7eff9;
---background: #090f16;
---primary: #6f0fc2;
---secondary: #181e53;
+--text: #e7eff9;\
+--background: #090f16;\
+--primary: #6f0fc2;\
+--secondary: #181e53;\
 --accent: #fc8236;
 ### Fonts:
 - Heading: Exo 2
