@@ -13,10 +13,22 @@
 :root {
     --font: 2rem;
     --background-color: #090f16;
-    --button-color: white;
+    --button-color: rgb(var(--button-purple));
+
+    /* Color for outer button pulsation effect */
+    --button-pulse: var(--button-purple);
+    /* Color for inner button gradient slide on initial hover (buttons leading away from active page) */
+    --button-slide: var(--button-purple);
+    /* Color for button shadow/border on hover (buttons leading away from active page) */
+    --button-border: var(--button-purple);
+
+    --button-purple: 207, 202, 248;
+    --button-orange: 255, 230, 215;
+    --button-green: 152, 226, 197;
 }
 
-.row {
+/* Nav */
+nav .row{
     display: flex;
     flex-direction: row;
     justify-content: center;
