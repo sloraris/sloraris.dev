@@ -1,1 +1,30 @@
 /*  */
+
+:root {
+    /* Main site color palette */
+    --text: #E7EFF9;
+    --background: #090F16;
+    --primary: #6F0FC2;
+    --secondary: #181E53;
+    --accent: #FC8236;
+
+
+    /* Nav button variables */
+    --button-color: rgb(var(--pastel-ivory));
+    --button-effect-color: var(--pastel-orange);
+
+    /* Color for outer button pulsation effect */
+    --button-pulse: var(--button-effect-color);
+    /* Color for inner button gradient slide on initial hover (buttons leading away from active page) */
+    --button-slide: var(--button-effect-color);
+    /* Color for button shadow/border on hover (buttons leading away from active page) */
+    --button-border: var(--button-effect-color);
+
+
+    /* Color RGB codes */
+    --pastel-white: 255, 255, 255;
+    --pastel-ivory: 231, 239, 249;
+    --pastel-purple: 207, 202, 248;
+    --pastel-orange: 255, 230, 215;
+    --pastel-green: 152, 226, 197;
+}

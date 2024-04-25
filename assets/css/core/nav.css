@@ -107,5 +107,5 @@ nav a:hover>span::after {
 /* Invert text for button of current page */
 nav .tab {
   background-color: var(--button-color);
-  color: var(--background-color);
+  color: var(--background);
 }

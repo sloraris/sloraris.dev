@@ -4,27 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 /* Core CSS */
-@import "core/nav.css";
 @import "core/colors.css";
+@import "core/nav.css";
 @import "core/fonts.css";
 @import "core/splash.css";
 
 /* Global */
 :root {
     --font: 2rem;
-    --background-color: #090f16;
-    --button-color: rgb(var(--button-purple));
-
-    /* Color for outer button pulsation effect */
-    --button-pulse: var(--button-purple);
-    /* Color for inner button gradient slide on initial hover (buttons leading away from active page) */
-    --button-slide: var(--button-purple);
-    /* Color for button shadow/border on hover (buttons leading away from active page) */
-    --button-border: var(--button-purple);
-
-    --button-purple: 207, 202, 248;
-    --button-orange: 255, 230, 215;
-    --button-green: 152, 226, 197;
 }
 
 /* Nav */
@@ -47,7 +34,7 @@ body {
     height: 100vh;
     box-sizing: border-box;
     padding: 5rem;
-    background-color: var(--background-color);
+    background-color: var(--background);
     background-blend-mode: color;
     margin: 0;
 }
